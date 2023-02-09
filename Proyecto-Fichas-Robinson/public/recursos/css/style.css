@@ -1,0 +1,64 @@
+.a{
+}
+.headers {
+    background-color: #ffffff;
+    height: 7rem;
+    margin-top: 10px;
+}
+.inner-top {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+}
+.logo{
+}
+
+#logo-sena{
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    padding: 0;
+    width: 28%;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url('../../recursos/img/logo-sena.png');
+}
+.linea {
+    background-color: #39a900;
+    height: 0.8rem;
+}
+
+#content{
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.inner-mid{
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    background: url('../../recursos/img/img-mitad.png');
+    background-position: center top !important;
+    background-size: cover;
+}
+
+.form-container-login{
+    width: 30%;
+    height: 60%;
+}
+.title-content{
+    background: #690;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+
+.footer-login{
+    background-color: #39a900;
+    color: #fff;
+    height: 100%;
+}
