@@ -17,18 +17,19 @@
         <div id="content" style="background-color: #ffffff">
             <div class="inner-mid d-flex align-items-center justify-content-center">
                 <div class="container col-sm-12 col-lg-5 form-container-login">
-                    <form action="">
+                    <form action="{{route('login')}}" method="post">
+                        @csrf
                         <div class="" style="background: white;">
                             <div class="title-content mb-4">
                                 <p>Ingreso Usuarios registrados</p>
                             </div>
                             <div class="content-login">
                                 <div class="form-floating  mb-3 ">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                                     <label for="floatingInput">Correo Electronico</label>
                                 </div>
                                 <div class="form-floating ">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
+                                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
                                     <label for="floatingPassword">Contraseña</label>
                                 </div>
                                 <div>
