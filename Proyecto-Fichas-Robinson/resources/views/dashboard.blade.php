@@ -4,6 +4,5 @@
 
 @endsection
 @section('content2')
-
-    <img class="img-fliud"src="../../FONDO INICIO.png" alt="">
+    <img class="img-fluid" src='img/FONDO INICIO.png' alt="">
 @endsection

@@ -4,12 +4,6 @@
     <header class="headers" style="">
         <div class="inner-top d-flex justify-content-center justify-content-sm-center justify-content-md-between justify-content-lg-between" >
                 <a href="{{url('auth.login')}}" id="logo-sena" class="img-fluid" title="Logo Sena"></a>
-
-                <div class="d-none d-sm-none d-md-block">
-                    <input class="img-fluid " type="image" style="height: 127px; margin-top: -12px; " name="imgbtn" src="{{url('../../recursos/img/login-via-microsoft.png')}}" id="">
-                </div>
-
-
         </div>
     </header>
     <div class="linea"></div>
