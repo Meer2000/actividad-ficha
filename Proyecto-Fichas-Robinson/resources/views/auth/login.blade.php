@@ -33,7 +33,7 @@
                                     <label for="floatingPassword">Contraseña</label>
                                 </div>
                                 <div>
-                                    <p><i></i>¿Olvidé mi contraseña?</p>
+                                    <a href=""><i></i>¿Olvidé mi contraseña?</a>
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 mb-3">
                                     <button type="submit" class="btn btn-outline-success">Ingresar</button>
