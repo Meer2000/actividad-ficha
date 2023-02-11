@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('apellido');
             $table->string('email')->unique();
-            $table->string('contrasena');
+            $table->string('password');
             $table->timestamps();
         });
     }
