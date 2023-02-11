@@ -23,4 +23,5 @@ Route::middleware([
     'verified'
 ])->group(function () {});
     Route::get('/dashboard', function () {;return view('fichas.create');})->name('dashboard');
+Route::get('/dashboard2', function () {;return view('fichas.index');})->name('dashboard2');
 

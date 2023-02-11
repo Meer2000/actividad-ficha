@@ -12,7 +12,7 @@
 
             <div class="col py-3">
                 <div>
-                    <H3>LISTA DE FICHAS</H3>
+                    <H3>Detalles de la ficha 54544</H3>
                 </div>
 
                 <div>
