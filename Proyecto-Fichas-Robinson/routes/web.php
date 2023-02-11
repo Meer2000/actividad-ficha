@@ -23,6 +23,6 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('fichas.create');
+        return view('dashboard');
     })->name('dashboard');
 });
