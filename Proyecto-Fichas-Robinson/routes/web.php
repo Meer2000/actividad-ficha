@@ -40,7 +40,6 @@ Route::get('/dashboard5', function () {;return view('aprendices.index');})->name
 Route::get('/dashboard6', function () {;return view('aprendices.show');})->name('dashboard2');
 Route::get('/dashboard7', function () {;return view('fichas.edit');})->name('dashboard2');
 Route::get('/dashboard8', function () {;return view('fichas.show');})->name('dashboard2');
-Route::get('/dashboard8', function () {;return view('fichas.show');})->name('dashboard2');
 Route::get('/dashboard9', function () {;return view('horarios.index');})->name('dashboard2');
 
 
