@@ -10,7 +10,7 @@ class Trimestre extends Model
     use HasFactory;
 
     protected $table = 'trimestre';
-    protected $primarykey ='idtrimestre';
-    protected $fillable = ['nombre',             
+    protected $primarykey ='id';
+    protected $fillable = ['nombre',
                            ];
 }
