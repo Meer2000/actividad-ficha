@@ -20,4 +20,14 @@ class Aprendiz extends Model
                            'Users_Id',
                            'FICHAS_Id',
                            ];
+                           public function user()
+                           {
+                               return $this->belongsTo('App\Models\User','id');
+                           }
+
+                           public function fichas()
+                           {
+                               return $this->belongsTo('App\Models\Ficha','id');
+                           }
+                       
 }

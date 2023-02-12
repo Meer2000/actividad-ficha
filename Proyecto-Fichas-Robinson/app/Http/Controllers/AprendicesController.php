@@ -3,45 +3,47 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Aprendiz;
+use App\Models\Fichas;
+use App\Models\Users;
 class AprendicesController extends Controller
 {
     public function index()
     {
-        $Horarios = Horarios::all();
-        return view('Horarios.index', compact('Horarios'));
+        $Aprendices = Aprendices::all();
+        return view('Aprendices.index', compact('Aprendices'));
     }
     public function create()
     {
-        $Horarios = Horario::all();
-        return view('Horarios.create', compact('Horarios'));
+        $Aprendices = Aprendiz::all();
+        return view('Aprendices.create', compact('Aprendices'));
     }
     public function show($id)
     {
-        $Horario = Horario::find($id);
-        return view('Horarios.show', compact('Horarios'));
+        $Aprendiz = Aprendiz::find($id);
+        return view('Aprendices.show', compact('Aprendices'));
     }
     public function store(Request $request)
     {
-        $Horario = Horario::create([  'id'=> $request->id,
+        $Aprendiz = Aprendiz::create([  'id'=> $request->id,
                                 'entrada'=> $request->entrada,
                                 'salida'=> $request->salida
                              ]);
-        return redirect()->route('Horarios.index')->with('success','Se ha creado correctamente.');
+        return redirect()->route('Aprendices.index')->with('success','Se ha creado correctamente.');
     }
     public function edit($id)
     {
-        $Horario = Horarios::find($id);
-        return view('Horarios.edit', compact('Horarios'));
+        $Aprendiz = Aprendices::find($id);
+        return view('Aprendices.edit', compact('Aprendices'));
     }
     public function update(Request $request, $id)
     {
-        $Horario = Horario::find($id)->update($request->all());
-        return redirect()->route('Horarios.index');
+        $Aprendiz = Aprendiz::find($id)->update($request->all());
+        return redirect()->route('Aprendices.index');
     }
     public function destroy($id)
     {
-        $Horario = Horario::find($id)->delete();
-        return redirect()->route('Horarios.index');
+        $Aprendiz = Aprendiz::find($id)->delete();
+        return redirect()->route('Aprendices.index');
     }
 }

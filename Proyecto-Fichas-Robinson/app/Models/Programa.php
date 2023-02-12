@@ -11,7 +11,6 @@ class Programa extends Model
 
     protected $table = 'Programas';
     protected $primarykey ='id';
-    protected $fillable = ['nombre',
-                           'FICHAS_Id'              
+    protected $fillable = ['nombre',     
                            ];
 }

@@ -12,6 +12,26 @@ class Ficha extends Model
     protected $primarykey ='id';
     protected $fillable = ['nombre',
                            'Users_Id',
-                           'trimestre_idtrimestre'                     
+                           'trimestre_idtrimestre',
+                           'TIPO_PROGRAMA_Id',
+                           'Programas_Id'                     
                            ];
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User','Id');
+    }
+    public function trimestre()
+    {
+        return $this->belongsTo('App\Models\Trimestre','idtrimestre');
+    }
+    public function tipo_programa()
+    {
+        return $this->belongsTo('App\Models\Tipo_programa','id');
+    }
+    public function Programa()
+    {
+        return $this->belongsTo('App\Models\Programa','id');
+    }
+
+
 }

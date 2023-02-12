@@ -3,45 +3,53 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Fichas;
+use App\Models\User;
+use App\Models\Trimestre;
+use App\Models\Tipo_programa;
+use App\Models\Programa;
 
 class FichasController extends Controller
 {
     public function index()
     {
-        $Horarios = Horarios::all();
-        return view('Horarios.index', compact('Horarios'));
+        $Fichas = Fichas::all();
+        return view('Fichas.index', compact('Fichas'));
     }
     public function create()
     {
-        $Horarios = Horario::all();
-        return view('Horarios.create', compact('Horarios'));
+        $Fichas = Ficha::all();
+        return view('Fichas.create', compact('Fichas'));
     }
     public function show($id)
     {
-        $Horario = Horario::find($id);
-        return view('Horarios.show', compact('Horarios'));
+        $Ficha = Ficha::find($id);
+        return view('Fichas.show', compact('Fichas'));
     }
     public function store(Request $request)
     {
-        $Horario = Horario::create([  'id'=> $request->id,
-                                'entrada'=> $request->entrada,
-                                'salida'=> $request->salida
+        $Ficha = Ficha::create([  'id'=> $request->id,
+                                'nombre'=> $request->nombre,
+                                'Users_Id'=> $request->Users_Id,
+                                'trimestre_idtrimestre'=> $request->trimestre_idtrimestre,
+                                'TIPO_PROGRAMA_Id'=> $request->TIPO_PROGRAMA_Id,
+                                'Programas_Id'=> $request->Programas_Id,                  
                              ]);
-        return redirect()->route('Horarios.index')->with('success','Se ha creado correctamente.');
+        return redirect()->route('Fichas.index')->with('success','Se ha creado correctamente.');
     }
     public function edit($id)
     {
-        $Horario = Horarios::find($id);
-        return view('Horarios.edit', compact('Horarios'));
+        $Ficha = Fichas::find($id);
+        return view('Fichas.edit', compact('Fichas','Users','Trimestres','Tipo_programas','Programas'));
     }
     public function update(Request $request, $id)
     {
-        $Horario = Horario::find($id)->update($request->all());
-        return redirect()->route('Horarios.index');
+        $Ficha = Ficha::find($id)->update($request->all());
+        return redirect()->route('Fichas.index');
     }
     public function destroy($id)
     {
-        $Horario = Horario::find($id)->delete();
-        return redirect()->route('Horarios.index');
+        $Ficha = Ficha::find($id)->delete();
+        return redirect()->route('Fichas.index');
     } 
 }

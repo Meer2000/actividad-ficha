@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Horarios;
+use App\Models\Horario;
 
 class HorariosController extends Controller
 {
