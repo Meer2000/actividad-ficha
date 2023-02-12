@@ -43,12 +43,12 @@
             <form>
                 <div class="mb-3">
                     <label for="fichas_id" class="form-label">hora de entrada</label>
-                    <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
+                    <input type="time" class="form-control" id="apellidos" aria-describedby="emailHelp">
 
                 </div>
                 <div class="mb-3">
                     <label for="fichas_id" class="form-label">hora de salida:</label>
-                    <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
+                    <input type="time" class="form-control" id="apellidos" aria-describedby="emailHelp">
 
                 </div>
                 <div class="mb-3">
