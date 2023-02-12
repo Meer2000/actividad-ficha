@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Trimestre extends Model
 {
     use HasFactory;
+
+    protected $table = 'trimestre';
+    protected $primarykey ='idtrimestre';
+    protected $fillable = ['nombre',             
+                           ];
 }

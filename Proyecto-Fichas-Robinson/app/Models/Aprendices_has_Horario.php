@@ -15,4 +15,8 @@ class Aprendices_has_Horario extends Model
     protected $fillable = ['Horarios_id',
                            'Users_Id',
                            ];
+
+
+                     
+
 }
