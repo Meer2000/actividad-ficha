@@ -2,6 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Tipo_ProgramasController;
+use App\Http\Controllers\Aprendices_has_HorariosController;
+use App\Http\Controllers\AprendicesController;
+use App\Http\Controllers\FichasController;
+use App\Http\Controllers\HorariosController;
+use App\Http\Controllers\ProgramasController;
+use App\Http\Controllers\TrimestresController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +45,11 @@ Route::get('/dashboard9', function () {;return view('horarios.index');})->name('
 
 
 
+
+Route::resource('deliveries',Tipo_ProgramasController::class);
+Route::resource('deliveries',Aprendices_has_HorariosController::class);
+Route::resource('deliveries',FichasController::class);
+Route::resource('deliveries',HorariosController::class);
+Route::resource('deliveries',ProgramasController::class);
+Route::resource('deliveries',TrimestresController::class);
+Route::resource('deliveries',AprendicesController::class);
