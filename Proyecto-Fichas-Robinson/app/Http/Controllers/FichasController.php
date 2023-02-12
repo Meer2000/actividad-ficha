@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Fichas;
+use App\Models\Ficha;
 use App\Models\User;
 use App\Models\Trimestre;
 use App\Models\Tipo_programa;
@@ -13,7 +13,7 @@ class FichasController extends Controller
 {
     public function index()
     {
-        $Fichas = Fichas::all();
+        $Fichas = Ficha::all();
         return view('Fichas.index', compact('Fichas'));
     }
     public function create()
