@@ -19,7 +19,7 @@ class HorariosController extends Controller
     public function show($id)
     {
         $Horario = Horario::find($id);
-        return view('Horarios.show', compact('Horarios'));
+        return view('Horarios.show', compact('Horario'));
     }
     public function store(Request $request)
     {
@@ -31,8 +31,8 @@ class HorariosController extends Controller
     }
     public function edit($id)
     {
-        $Horario = Horarios::find($id);
-        return view('Horarios.edit', compact('Horarios'));
+        $Horario =Horario::find($id);
+        return view('Horarios.edit', compact('Horario'));
     }
     public function update(Request $request, $id)
     {

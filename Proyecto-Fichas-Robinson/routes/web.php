@@ -41,3 +41,4 @@ Route::resource('Horarios',HorariosController::class);
 Route::resource('Programas',ProgramasController::class);
 Route::resource('Trimestres',TrimestresController::class);
 Route::resource('Aprendices',AprendicesController::class);
+

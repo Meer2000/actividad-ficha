@@ -16,10 +16,6 @@ return new class extends Migration
         Schema::create('Programas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->bigInteger('Fichas_id')->unsigned();
-
-
-            $table->foreign('Fichas_id')->references('id')->on('Fichas');
             $table->timestamps();
         });
     }
