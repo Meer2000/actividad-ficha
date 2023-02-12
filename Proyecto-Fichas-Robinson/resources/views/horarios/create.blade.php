@@ -24,14 +24,11 @@
                 </div>
 
 
-
                 <div class="mb-3">
                     <label for="numero de documento" class="form-label">numero de documento</label>
                     <input type="number" class="form-control" id="numero de documento" aria-describedby="emailHelp">
                 </div>
-                <div class="mb-3">
-                    <h3>Asignacion de ficha</h3>
-                </div>
+
                 <div class="mb-3">
                     <label for="fichas_id" class="form-label">Programa de formacion:</label>
                     <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
@@ -45,28 +42,25 @@
 
             <form>
                 <div class="mb-3">
+                    <label for="fichas_id" class="form-label">hora de entrada</label>
+                    <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
+                    <label for="fichas_id" class="form-label">hora de salida:</label>
+                    <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
+
+                </div>
+                <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
                 </div>
             </form>
 
         </div>
-        <div class="mb-3">
-            <label for="fichas_id" class="form-label">hora de entrada</label>
-            <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
+
+        <div class="col-md-2">
 
         </div>
-        <div class="mb-3">
-            <label for="fichas_id" class="form-label">hora de salida:</label>
-            <input type="text" class="form-control" id="apellidos" aria-describedby="emailHelp">
-
-        </div>
-        <div class="mb-3">
-            <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
-        </div >
-        <div class="col-md-2"></div>
     </div>
-
-
-
 
 @endsection
