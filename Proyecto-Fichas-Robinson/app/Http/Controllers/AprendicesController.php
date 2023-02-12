@@ -10,7 +10,7 @@ class AprendicesController extends Controller
 {
     public function index()
     {
-        $Aprendices = Aprendices::all();
+        $Aprendices = Aprendiz::all();
         return view('Aprendices.index', compact('Aprendices'));
     }
     public function create()
