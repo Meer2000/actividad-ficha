@@ -25,4 +25,5 @@ Route::middleware([
     Route::get('/dashboard', function () {;return view('fichas.create');})->name('dashboard');
 Route::get('/dashboard2', function () {;return view('fichas.index');})->name('dashboard2');
 Route::get('/dashboard3', function () {;return view('aprendices.edit');})->name('dashboard2');
+Route::get('/dashboard4', function () {;return view('aprendices.create');})->name('dashboard2');
 
