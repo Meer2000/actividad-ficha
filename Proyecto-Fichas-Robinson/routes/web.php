@@ -46,10 +46,10 @@ Route::get('/dashboard9', function () {;return view('horarios.index');})->name('
 
 
 
-Route::resource('deliveries',Tipo_ProgramasController::class);
-Route::resource('deliveries',Aprendices_has_HorariosController::class);
-Route::resource('deliveries',FichasController::class);
-Route::resource('deliveries',HorariosController::class);
-Route::resource('deliveries',ProgramasController::class);
-Route::resource('deliveries',TrimestresController::class);
-Route::resource('deliveries',AprendicesController::class);
+Route::resource('Tipo_Programas',Tipo_ProgramasController::class);
+Route::resource('Aprendices_has_Horarios',Aprendices_has_HorariosController::class);
+Route::resource('Fichas',FichasController::class);
+Route::resource('Horarios',HorariosController::class);
+Route::resource('Programas',ProgramasController::class);
+Route::resource('Trimestres',TrimestresController::class);
+Route::resource('Aprendices',AprendicesController::class);

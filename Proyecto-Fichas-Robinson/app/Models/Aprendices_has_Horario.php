@@ -10,10 +10,9 @@ class Aprendices_has_Horario extends Model
     use HasFactory;
 
     
-    protected $table = 'bills';
-    protected $primarykey ='id';
-    protected $fillable = ['product_id',
-                           'amount',
-                           'payment_method',
+    protected $table = 'Aprendices_has_Horarios';
+    protected $primarykey ='aprendices_id';
+    protected $fillable = ['Horarios_id',
+                           'Users_Id',
                            ];
 }
