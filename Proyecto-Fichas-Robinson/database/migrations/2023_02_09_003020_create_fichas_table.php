@@ -21,6 +21,8 @@ return new class extends Migration
 
 
             $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('trimestre_id')->references('id')->on('trimestre');
+            $table->foreign('programas_id')->references('id')->on('programos');
             $table->timestamps();
 
 

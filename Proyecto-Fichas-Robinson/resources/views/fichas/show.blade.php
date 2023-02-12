@@ -12,18 +12,19 @@
 
             <div class="col py-3">
                 <div>
-                    <H3>LISTA DE FICHAS</H3>
+                    <H3>DETALLES DE LA FICHA</H3>
                 </div>
 
                 <div>
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th scope="col">Ficha</th>
+
                             <th scope="col">Nivel Formativo</th>
                             <th scope="col">Nombre del Programa</th>
                             <th scope="col">Trimestre</th>
-                            <th scope="col">Accion</th>
+                            <th scope="col">Numero de aprendices</th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -32,13 +33,7 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>@mdo</td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" class="btn btn-danger">Borrar</button>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                    <button type="button" class="btn btn-success">Ver</button>
-                                </div>
-                            </td>
+
                         </tr>
 
                         </tbody>

@@ -16,9 +16,6 @@ return new class extends Migration
         Schema::create('tipo_programa', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->bigInteger('fichas_id')->unsigned();
-
-            $table->foreign('fichas_id')->references('id')->on('fichas');
             $table->timestamps();
         });
     }
