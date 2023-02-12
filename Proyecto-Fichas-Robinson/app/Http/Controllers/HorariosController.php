@@ -8,8 +8,8 @@ class HorariosController extends Controller
 {
     public function index()
     {
-        $Horarios = Horarios::all();
-        return view('Horarios.index', compact('Horarios'));
+        $Horarios =Horario::all();
+        return view('Horarios.index',compact('Horarios'));
     }
     public function create()
     {

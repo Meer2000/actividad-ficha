@@ -32,8 +32,8 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {});
- 
-Route::get('/dashboard', function () {;return view('fichas.create');})->name('dashboard');
+
+Route::get('/dashboard', function () {;return view('dashboard');})->name('dashboard');
 Route::resource('Tipo_Programas',Tipo_ProgramasController::class);
 Route::resource('Aprendices_has_Horarios',Aprendices_has_HorariosController::class);
 Route::resource('Fichas',FichasController::class);
