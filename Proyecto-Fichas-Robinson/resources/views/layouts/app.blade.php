@@ -31,20 +31,19 @@
                     <a class="nav-link " aria-current="page" href="{{route('Horarios.index')}}">Ingreso/Salida del aprendiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">crear aprendiz</a>
+                    <a class="nav-link " aria-current="page" href="{{route('Aprendices.create')}}">crear aprendiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="">crear ficha tecnica</a>
+                    <a class="nav-link " aria-current="page" href="{{route('Fichas.create')}}">crear ficha tecnica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#">crear ficha tecnica</a>
+                    <a class="nav-link " aria-current="page" href="{{route('Aprendices.create')}}">crear ficha tecnica</a>
                 </li>
 
 
             </ul>
             <form class="d-flex">
-
-                <button class="btn btn-outline-success" type="submit">cerrar sesion</button>
+            <a href="{{route('login')}}" class="btn btn-outline-success " role="button" aria-pressed="true">cerrar sesion</a>
             </form>
         </div>
     </div>
