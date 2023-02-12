@@ -42,6 +42,7 @@ Route::get('/dashboard7', function () {;return view('fichas.edit');})->name('das
 Route::get('/dashboard8', function () {;return view('fichas.show');})->name('dashboard2');
 Route::get('/dashboard9', function () {;return view('horarios.index');})->name('dashboard2');
 Route::get('/dashboard10', function () {;return view('horarios.show');})->name('dashboard2');
+Route::get('/dashboard11', function () {;return view('horarios.create');})->name('dashboard2');
 
 
 
