@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Aprendices_has_Horario extends Model
 {
     use HasFactory;
+
+    
+    protected $table = 'bills';
+    protected $primarykey ='id';
+    protected $fillable = ['product_id',
+                           'amount',
+                           'payment_method',
+                           ];
 }
