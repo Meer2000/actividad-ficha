@@ -3,8 +3,10 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">Crear</a>
-                <a href="#" class="list-group-item list-group-item-action">Listar</a>
+                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action">Crear
+                    aprendiz</a>
+                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action">Listar
+                    aprendiz</a>
             </div>
         </div>
 
@@ -19,21 +21,23 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
                             <th scope="col">Correo</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">fecha de nacimiento</th>
                             <th scope="col">Numero de documento</th>
-                            <th scope="col">Programa de formacion</th>
                             <th scope="col">Accion</th>
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($Aprendices as $Aprendiz)
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Adso</td>
+
+                            <td>{{$Aprendiz ->nombres}}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-danger">Borrar</button>
@@ -42,6 +46,7 @@
                                 </div>
                             </td>
                         </tr>
+                        @endforeach
 
                         </tbody>
                     </table>

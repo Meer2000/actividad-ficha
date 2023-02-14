@@ -13,7 +13,7 @@ class Aprendiz extends Model
     protected $primarykey ='id';
     protected $fillable = ['nombres',
                            'apellidos',
-                           'correo',
+                           'email',
                            'telefono',
                            'fecha de nacimiento',
                            'numero de documento',
@@ -29,5 +29,5 @@ class Aprendiz extends Model
                            {
                                return $this->belongsTo('App\Models\Ficha','id');
                            }
-                       
+
 }

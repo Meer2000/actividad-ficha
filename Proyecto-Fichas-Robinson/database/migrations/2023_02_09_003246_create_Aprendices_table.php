@@ -21,9 +21,9 @@ return new class extends Migration
             $table->string('telefono');
             $table->date('fecha de nacimiento');
             $table->string('numero de documento');
-            $table->bigInteger('users_id')->unsigned();
-            $table->bigInteger('Fichas_id')->unsigned();
-            $table->bigInteger('Horarios_id')->unsigned();
+            $table->bigInteger('users_id')->unsigned()->nullable();
+            $table->bigInteger('Fichas_id')->unsigned()->nullable();
+            $table->bigInteger('Horarios_id')->unsigned()->nullable();
 
             $table->foreign('Fichas_id')->references('id')->on('Fichas');
             $table->foreign('Horarios_id')->references('id')->on('Horarios');

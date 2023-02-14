@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Aprendiz;
-use App\Models\Fichas;
-use App\Models\Users;
 class AprendicesController extends Controller
 {
     public function index()
@@ -13,34 +11,46 @@ class AprendicesController extends Controller
         $Aprendices = Aprendiz::all();
         return view('Aprendices.index', compact('Aprendices'));
     }
+
     public function create()
     {
         $Aprendices = Aprendiz::all();
         return view('Aprendices.create', compact('Aprendices'));
     }
+
     public function show($id)
     {
         $Aprendiz = Aprendiz::find($id);
-        return view('Aprendices.show', compact('Aprendices'));
+        return view('Aprendices.show', compact('Aprendiz'));
     }
+
     public function store(Request $request)
     {
-        $Aprendiz = Aprendiz::create([  'id'=> $request->id,
-                                'entrada'=> $request->entrada,
-                                'salida'=> $request->salida
-                             ]);
-        return redirect()->route('Aprendices.index')->with('success','Se ha creado correctamente.');
+        $Aprendiz = Aprendiz::create(['id' => $request->id,
+            'nombres' => $request->nombres,
+            'apellidos' => $request->apellidos,
+            'email' => $request->email,
+            'telefono' => $request->telefono,
+            'fecha de nacimiento' => $request->fecha_de_nacimiento,
+            'numero de documento' => $request->numero_de_documento,
+
+
+        ]);
+        return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
     }
+
     public function edit($id)
     {
-        $Aprendiz = Aprendices::find($id);
-        return view('Aprendices.edit', compact('Aprendices'));
+        $Aprendiz = Aprendiz::find($id);
+        return view('Aprendices.edit', compact('Aprendiz'));
     }
+
     public function update(Request $request, $id)
     {
         $Aprendiz = Aprendiz::find($id)->update($request->all());
         return redirect()->route('Aprendices.index');
     }
+
     public function destroy($id)
     {
         $Aprendiz = Aprendiz::find($id)->delete();
