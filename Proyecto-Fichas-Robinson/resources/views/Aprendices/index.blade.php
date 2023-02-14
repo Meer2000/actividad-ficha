@@ -35,9 +35,11 @@
                         <tr>
 
                             <td>{{$Aprendiz ->nombres}}</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$Aprendiz ->apellidos}}</td>
+                            <td>{{$Aprendiz ->email}}</td>
+                            <td>{{$Aprendiz ->telefono}}</td>
+                            <td>{{$Aprendiz ->fecha_de_nacimiento}}</td>
+                            <td>{{$Aprendiz ->numero_de_documento}}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-danger">Borrar</button>
