@@ -32,7 +32,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach
+
                         <tr>
 
                             <td>{{$Aprendiz ->nombres}}</td>
@@ -41,10 +41,10 @@
                             <td>{{$Aprendiz ->documento}}</td>
                             <td>ficha</td>
                             <td>tipo de formacion</td>
+                            <td>programa de formacion</td>
                             <td>{{$Aprendiz ->fecha}}</td>
 
                         </tr>
-                        @endforeach
 
                         </tbody>
                     </table>

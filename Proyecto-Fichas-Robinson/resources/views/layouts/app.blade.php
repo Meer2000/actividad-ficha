@@ -37,7 +37,7 @@
                     <a class="nav-link " aria-current="page" href="{{route('Fichas.create')}}">crear ficha tecnica</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{{route('Aprendices.create')}}">crear ficha tecnica</a>
+                    <a class="nav-link " aria-current="page" href="{{route('Fichas.index')}}">crear ficha tecnica</a>
                 </li>
 
 

@@ -3,8 +3,8 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="{{route('Horarios.create')}}" class="list-group-item list-group-item-action">Crear</a>
-                <a href="{{route('Horarios.index')}}" class="list-group-item list-group-item-action">Listar</a>
+
+                <a href="{{route('Horarios.index')}}" class="list-group-item list-group-item-action">Listar horarios</a>
             </div>
         </div>
 
