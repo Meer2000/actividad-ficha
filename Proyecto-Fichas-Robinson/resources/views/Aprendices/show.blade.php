@@ -14,7 +14,7 @@
 
             <div class="col py-3">
                 <div>
-                    <H3>detalles del aprendiz</H3>
+                    <H3>detalles del aprendiz {{$Aprendiz->nombres}}{{$Aprendiz->apellidos}}</H3>
                 </div>
 
                 <div>
