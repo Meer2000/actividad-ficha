@@ -42,9 +42,9 @@
                             <td>{{$Aprendiz ->documento}}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" class="btn btn-danger">Borrar</button>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                    <button type="button" class="btn btn-success">Ver</button>
+                                    <button type="button" class="btn btn-danger">Inhabilitar</button>
+                                    <a  href="{{route('Aprendices.edit',$Aprendiz->id)}}" class="btn btn-warning" >Editar</a>
+                                    <a href="{{route('Aprendices.show',$Aprendiz->id)}}" class="btn btn-success">Ver</a>
                                 </div>
                             </td>
                         </tr>

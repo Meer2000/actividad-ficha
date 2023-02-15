@@ -3,8 +3,10 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">Crear</a>
-                <a href="#" class="list-group-item list-group-item-action">Listar</a>
+                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action">Crear
+                    aprendiz</a>
+                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action">Listar
+                    aprendiz</a>
             </div>
         </div>
 
@@ -19,8 +21,8 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th scope="col">nombre</th>
-                            <th scope="col">apellido</th>
+                            <th scope="col">nombres</th>
+                            <th scope="col">apellidos</th>
                             <th scope="col">correo</th>
                             <th scope="col">numero de documento</th>
                             <th scope="col">ficha</th>
@@ -30,13 +32,19 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>escarraga</td>
-                            <td>prueba@gmail.com</td>
-                            <td>45555544</td>
+
+                            <td>{{$Aprendiz ->nombres}}</td>
+                            <td>{{$Aprendiz ->apellidos}}</td>
+                            <td>{{$Aprendiz ->email}}</td>
+                            <td>{{$Aprendiz ->documento}}</td>
+                            <td>ficha</td>
+                            <td>tipo de formacion</td>
+                            <td>{{$Aprendiz ->fecha}}</td>
+
                         </tr>
+                        @endforeach
 
                         </tbody>
                     </table>
