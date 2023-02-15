@@ -34,13 +34,13 @@
                     <input type="number" name="telefono" class="form-control" id="telefono" required>
                 </div>
                 <div class="mb-3">
-                    <label for="fecha de nacimiento" class="form-label">Fecha de nacimiento</label>
-                    <input type="date" name="fecha_de_nacimiento" class="form-control" id="fecha de nacimiento"
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" class="form-control" id="fecha"
                            required>
                 </div>
                 <div class="mb-3">
-                    <label for="numero de documento	" class="form-label">Numero de Documento</label>
-                    <input type="number" name="numero_de_documento" class="form-control" id="numero de documento	"
+                    <label for="documento" class="form-label">Numero de Documento</label>
+                    <input type="number" name="documento" class="form-control" id="documento"
                            required>
                 </div>
 

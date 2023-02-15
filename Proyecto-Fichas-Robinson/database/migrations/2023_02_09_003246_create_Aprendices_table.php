@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('apellidos');
             $table->string('email')->unique();
             $table->string('telefono');
-            $table->date('fecha de nacimiento');
-            $table->string('numero de documento');
+            $table->date('fecha');
+            $table->string('documento');
             $table->bigInteger('users_id')->unsigned()->nullable();
             $table->bigInteger('Fichas_id')->unsigned()->nullable();
             $table->bigInteger('Horarios_id')->unsigned()->nullable();

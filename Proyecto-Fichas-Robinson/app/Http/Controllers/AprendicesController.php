@@ -31,8 +31,8 @@ class AprendicesController extends Controller
             'apellidos' => $request->apellidos,
             'email' => $request->email,
             'telefono' => $request->telefono,
-            'fecha de nacimiento' => $request->fecha_de_nacimiento,
-            'numero de documento' => $request->numero_de_documento,
+            'fecha' => $request->fecha,
+            'documento' => $request->documento,
 
 
         ]);

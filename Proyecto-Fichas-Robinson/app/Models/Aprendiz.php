@@ -15,8 +15,8 @@ class Aprendiz extends Model
                            'apellidos',
                            'email',
                            'telefono',
-                           'fecha de nacimiento',
-                           'numero de documento',
+                           'fecha',
+                           'documento',
                            'Users_Id',
                            'FICHAS_Id',
                            ];
