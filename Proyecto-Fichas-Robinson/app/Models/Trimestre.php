@@ -9,7 +9,7 @@ class Trimestre extends Model
 {
     use HasFactory;
 
-    protected $table = 'trimestre';
+    protected $table = 'Trimestre';
     protected $primarykey ='id';
     protected $fillable = ['nombre',
                            ];
