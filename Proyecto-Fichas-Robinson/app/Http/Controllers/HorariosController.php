@@ -3,13 +3,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Horario;
+Use App\Models\Aprendiz;
 
 class HorariosController extends Controller
 {
     public function index()
     {
         $Horarios =Horario::all();
-        return view('Horarios.index',compact('Horarios'));
+        $Aprendices=Aprendiz::all();
+        return view('Horarios.index',compact('Horarios','Aprendices'));
     }
     public function create()
     {

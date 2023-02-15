@@ -12,7 +12,7 @@
 
             <div class="col py-3">
                 <div>
-                    <H3>historial de entrada y salida de {@user}</H3>
+                    <H3>historial de entrada y salida de </H3>
                 </div>
 
                 <div>

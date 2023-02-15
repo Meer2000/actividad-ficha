@@ -20,35 +20,46 @@
                         <thead>
                         <tr>
 
-                            <th scope="col">Nombre de aprendiz</th>
-                            <th scope="col">Numero de ficha </th>
-                            <th scope="col">Programa de formación </th>
+                            <th scope="col">Nombres del aprendiz</th>
+                            <th scope="col">Numero de ficha</th>
+                            <th scope="col">Programa de formación</th>
                             <th scope="col">numero de documento</th>
-                            <th scope="col">Hora de entrada </th>
+                            <th scope="col">Hora de entrada</th>
                             <th scope="col">Hora de salida</th>
                             <th scope="col">Entrada / Salida</th>
                             <th scope="col">Hitorial</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>2338319</td>
-                            <td>ADSI</td>
-                            <td>1020030040</td>
-                            <td>08:00</td>
-                            <td>17:00</td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        @foreach($Aprendices as $Aprendiz)
+                            @foreach($Horarios as $Horario)
+
+                            <tr>
+                                <td>{{$Aprendiz ->nombres}} {{$Aprendiz ->apellidos}}</td>
+                                <td>ficha</td>
+                                <td>programa de formacion</td>
+                                <td>{{$Aprendiz ->documento}}</td>
+
+                                <td>{{$Horario->entrada}}</td>
+                                <td>{{$Horario->salida}}</td>
+
+
+
+                               <td> <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-success">Añadir</button>
                                 </div>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" class="btn btn-warning">Detalles</button>
-                                </div>
-                            </td>
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <a href="{{route('Horarios.show',$Horario->id)}}" class="btn btn-warning">detalles</a>
+                                    </div>
+                                </td>
 
-                        </tr>
+                            </tr>
+                        @endforeach
+                        @endforeach
+
+
 
                         </tbody>
                     </table>

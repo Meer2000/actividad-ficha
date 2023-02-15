@@ -5,15 +5,15 @@
         <div class="col-md-2">
             <div class="list-group">
 
-                <a href="{{route('Horarios.create')}}" class="list-group-item list-group-item-action">Crear</a>
-                <a href="{{route('Horarios.index')}}" class="list-group-item list-group-item-action">Listar</a>
+
+                <a href="{{route('Horarios.index')}}" class="list-group-item list-group-item-action">Listar horarios</a>
             </div>
 
         </div>
 
         <div class="col-md-8">
             <form>
-                <h3>Gestionar Entrada y Salida del aprendiz michell</h3>
+                <h3>Gestionar Entrada y Salida </h3>
                 <div class="mb-3">
                     <label for="nombres" id="nombres" class="form-label">nombres</label>
                     <input type="text" class="form-control" id="nombres" aria-describedby="emailHelp">
