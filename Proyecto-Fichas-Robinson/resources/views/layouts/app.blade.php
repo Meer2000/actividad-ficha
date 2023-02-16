@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action="{{route('logout')}}" method="post" id="cerrar">
+<form action="{{route('logout')}}"  method="post" id="cerrar">
     @csrf
 </form>
 
@@ -42,11 +42,14 @@
 
 
             </ul>
-            <form class="d-flex">
-            <a href="{{route('login')}}" class="btn btn-outline-success " role="button" aria-pressed="true">cerrar sesion</a>
+
+            <form action="{{ route('logout') }}"method="POST">
+                @csrf
+                <button type="submit"  class="btn btn-outline-success" >Cerrar sesión</button>
             </form>
         </div>
     </div>
+
 
 </nav>
 
