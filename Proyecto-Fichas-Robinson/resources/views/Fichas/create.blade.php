@@ -17,26 +17,29 @@
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
                     <input type="number" class="form-control" id="exampleInputEmail1" >
                 </div>
+                @foreach($Fichas as $Ficha)
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nivel formativo</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">Hacer un foreach</option>
+                        <option value="1">{{$Ficha ->nombre}}</option>
                     </select>
                 </div>
+                @endforeach
+
                 <div class="mb-3">
-                    @foreach
                     <label for="exampleInputEmail1" class="form-label">¿En que programa se encuentra?</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
+                        <option value="1"></option>
                     </select>
-                    @endforeach
                 </div>
+                @foreach($Trimestres as $Trimestre)
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">¿Trimestre actual?</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
+                        <option value="1">{{$Trimestre ->Trimestre_id}}</option>
                     </select>
                 </div>
+                @endforeach
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
                 </div>

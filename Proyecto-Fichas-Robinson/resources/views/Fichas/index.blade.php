@@ -3,8 +3,8 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="{{route('Fichas.create')}}" class="list-group-item list-group-item-action">Crear ficha</a>
-                <a href="{{route('Fichas.index')}}" class="list-group-item list-group-item-action">listar fichas</a>
+                <a href="#" class="list-group-item list-group-item-action">Crear</a>
+                <a href="#" class="list-group-item list-group-item-action">Listar</a>
             </div>
         </div>
 
@@ -27,17 +27,20 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @foreach($Fichas as $Ficha)
                         <tr>
-                            @foreach($Fichas as $Ficha)
-                            <td>{{$Ficha ->nombre}}</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>{{$Ficha->Trimestre_id}}</td>
+                            <th>{{$Ficha ->nombre }}/th>
+                            <td>{{$Ficha ->user_id }}</td>
+                            <td>{{$Ficha ->Trimestre_id }}</td>
+                            <td>{{$Ficha ->Programas_id }}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-danger">Borrar</button>
                                     <button type="button" class="btn btn-warning">Editar</button>
                                     <button type="button" class="btn btn-success">Ver</button>
+                                    <button type="button" class="btn btn-danger">Inhabilitar</button>
+                                    <a  href="{{route('Fichas.edit',$Fichas->id)}}" class="btn btn-warning" >Editar</a>
+                                    <a href="{{route('Fichas.show',$Fichas->id)}}" class="btn btn-success">Ver</a>
                                 </div>
                             </td>
                         </tr>

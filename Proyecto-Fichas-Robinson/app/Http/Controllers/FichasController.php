@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Ficha;
-
+use App\Models\User;
+use App\Models\Trimestre;
+use App\Models\Tipo_programa;
+use App\Models\Programa;
 
 class FichasController extends Controller
 {
@@ -37,7 +40,7 @@ class FichasController extends Controller
     public function edit($id)
     {
         $Ficha = Ficha::find($id);
-        return view('Fichas.edit', compact('Ficha'));
+        return view('Fichas.edit', compact('Ficha',));
     }
     public function update(Request $request, $id)
     {
