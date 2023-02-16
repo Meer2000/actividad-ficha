@@ -46,10 +46,12 @@
 
                 <h4>Asigancion de ficha</h4>
                 <div class="mb-3">
+                    @foreach($Programas as $Programa)
                     <label for="exampleInputEmail1" class="form-label">Programa de formacion</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
+                        <option value="1">{{$Programa ->nombre }}h</option>
                     </select>
+                        @endforeach
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
