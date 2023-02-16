@@ -41,11 +41,9 @@
                             <td>{{$Aprendiz ->documento}}</td>
                             <td>ficha</td>
                             <td>tipo de formacion</td>
-                            <td>programa de formacion</td>
                             <td>{{$Aprendiz ->fecha}}</td>
 
                         </tr>
-
                         </tbody>
                     </table>
                 </div>
