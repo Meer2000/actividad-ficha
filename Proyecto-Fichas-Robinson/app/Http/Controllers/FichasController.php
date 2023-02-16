@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Ficha;
-use App\Models\User;
-use App\Models\Trimestre;
-use App\Models\Tipo_programa;
-use App\Models\Programa;
+
 
 class FichasController extends Controller
 {
@@ -24,7 +21,7 @@ class FichasController extends Controller
     public function show($id)
     {
         $Ficha = Ficha::find($id);
-        return view('Fichas.show', compact('Fichas'));
+        return view('Fichas.show', compact('Ficha'));
     }
     public function store(Request $request)
     {
@@ -33,14 +30,14 @@ class FichasController extends Controller
                                 'Users_Id'=> $request->Users_Id,
                                 'trimestre_idtrimestre'=> $request->trimestre_idtrimestre,
                                 'TIPO_PROGRAMA_Id'=> $request->TIPO_PROGRAMA_Id,
-                                'Programas_Id'=> $request->Programas_Id,                  
+                                'Programas_Id'=> $request->Programas_Id,
                              ]);
         return redirect()->route('Fichas.index')->with('success','Se ha creado correctamente.');
     }
     public function edit($id)
     {
-        $Ficha = Fichas::find($id);
-        return view('Fichas.edit', compact('Fichas','Users','Trimestres','Tipo_programas','Programas'));
+        $Ficha = Ficha::find($id);
+        return view('Fichas.edit', compact('Ficha'));
     }
     public function update(Request $request, $id)
     {
@@ -51,5 +48,5 @@ class FichasController extends Controller
     {
         $Ficha = Ficha::find($id)->delete();
         return redirect()->route('Fichas.index');
-    } 
+    }
 }

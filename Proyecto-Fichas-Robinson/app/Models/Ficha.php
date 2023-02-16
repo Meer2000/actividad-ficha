@@ -12,9 +12,9 @@ class Ficha extends Model
     protected $primarykey ='id';
     protected $fillable = ['nombre',
                            'Users_Id',
-                           'trimestre_idtrimestre',
+                           'Trimestre_id',
                            'TIPO_PROGRAMA_Id',
-                           'Programas_Id'                     
+                           'Programas_Id'
                            ];
     public function user()
     {

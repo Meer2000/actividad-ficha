@@ -3,8 +3,8 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">Crear</a>
-                <a href="#" class="list-group-item list-group-item-action">Listar</a>
+                <a href="{{route('Fichas.create')}}" class="list-group-item list-group-item-action">Crear ficha</a>
+                <a href="{{route('Fichas.index')}}" class="list-group-item list-group-item-action">listar fichas</a>
             </div>
         </div>
 
@@ -28,10 +28,11 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
+                            @foreach($Fichas as $Ficha)
+                            <td>{{$Ficha ->nombre}}</td>
                             <td>Otto</td>
                             <td>@mdo</td>
+                            <td>{{$Ficha->Trimestre_id}}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-danger">Borrar</button>
@@ -40,6 +41,7 @@
                                 </div>
                             </td>
                         </tr>
+                        @endforeach
 
                         </tbody>
                     </table>
