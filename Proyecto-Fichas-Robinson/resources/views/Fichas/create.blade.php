@@ -4,8 +4,8 @@
         <div class="col-md-2">
             <div class="list-group">
 
-                <a href="#" class="list-group-item list-group-item-action">Crear ficha</a>
-                <a href="#" class="list-group-item list-group-item-action">Listar</a>
+                <a href="{{route('Fichas.create')}}" class="list-group-item list-group-item-action">Crear ficha</a>
+                <a href="{{route('Fichas.index')}}" class="list-group-item list-group-item-action">Listar</a>
             </div>
 
         </div>
@@ -32,14 +32,14 @@
                         <option value="1"></option>
                     </select>
                 </div>
-                @foreach($Trimestres as $Trimestre)
+
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">¿Trimestre actual?</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">{{$Trimestre ->Trimestre_id}}</option>
+                        <option value="1"></option>
                     </select>
                 </div>
-                @endforeach
+
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
                 </div>
