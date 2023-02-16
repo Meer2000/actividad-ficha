@@ -5,18 +5,20 @@
         <div class="col-md-2">
             <div class="list-group">
 
-                <a href="#" class="list-group-item list-group-item-action">Crear</a>
-                <a href="#" class="list-group-item list-group-item-action">Listar</a>
+                <a href="{{route('Fichas.create')}}" class="list-group-item list-group-item-action">Crear ficha</a>
+                <a href="{{route('Fichas.index')}}" class="list-group-item list-group-item-action">Listar</a>
             </div>
 
         </div>
 
         <div class="col-md-8">
-            <form>
+            <form action="{{route('Fichas.update',$Ficha->id)}}" method="post">
+                @csrf
+                @method('PUT')
                 <h3>EDITAR FICHA DE FORMACIÓN</h3>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" value="{{$Ficha->nombre}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nivel formativo</label>
@@ -47,5 +49,5 @@
     <div class="col-md-2"></div>
 
 
-    </div>
+
 @endsection
