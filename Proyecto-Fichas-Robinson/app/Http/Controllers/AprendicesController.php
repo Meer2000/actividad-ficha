@@ -11,7 +11,7 @@ class AprendicesController extends Controller
 {
     public function index()
     {
-       // $Aprendices = Aprendiz::all(); se  coloca comentario
+       // $Aprendices = Aprendiz::all(); se  coloca comentario en este line
         //return view('Aprendices.index', compact('Aprendices'));
        $Aprendices = Aprendiz::delEstudiante(auth()->User()->id)->get();
         return view('Aprendices.index', compact('Aprendices'));
@@ -41,7 +41,7 @@ class AprendicesController extends Controller
             'telefono' => $request->telefono,
             'fecha' => $request->fecha,
             'documento' => $request->documento,
-           'users_id' => $user -> id,
+           'users_id' => $user -> id, //esto es prueba
         ]);
         return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
     }
