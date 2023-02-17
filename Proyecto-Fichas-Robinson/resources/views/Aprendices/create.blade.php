@@ -42,6 +42,7 @@
                     <label for="documento" class="form-label">Numero de Documento</label>
                     <input type="number" name="documento" class="form-control" id="documento"
                            required>
+                    <input class="form-control" type="hidden" name="users_id" id="users_id" value="{{Auth::user()}}" >
                 </div>
 
                 <h4>Asigancion de ficha</h4>

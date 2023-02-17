@@ -35,7 +35,7 @@
                         <tr>
 
                             <td>{{$Aprendiz ->nombres}}</td>
-                            <td>{{$Aprendiz ->apellido}}</td>
+                            <td>{{$Aprendiz ->apellidos}}</td>
                             <td>{{$Aprendiz ->email}}</td>
                             <td>{{$Aprendiz ->telefono}}</td>
                             <td>{{$Aprendiz ->fecha}}</td>

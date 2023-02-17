@@ -13,8 +13,10 @@ class FichasController extends Controller
 {
     public function index()
     {
-        $Fichas = Ficha::all();
-        return view('Fichas.index', compact('Fichas'));
+       $Fichas = Ficha::all();
+      return view('Fichas.index', compact('Fichas'));
+
+
     }
     public function create()
     {
@@ -52,4 +54,5 @@ class FichasController extends Controller
         $Ficha = Ficha::find($id)->delete();
         return redirect()->route('Fichas.index');
     }
+
 }

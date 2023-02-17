@@ -17,7 +17,7 @@ class Aprendiz extends Model
                            'telefono',
                            'fecha',
                            'documento',
-                           'Users_Id',
+                           'users_id',
                            'FICHAS_Id',
                            ];
                            public function user()
@@ -29,5 +29,10 @@ class Aprendiz extends Model
                            {
                                return $this->belongsTo('App\Models\Ficha','id');
                            }
+
+    public function scopeDelEstudiante($query, $AprendicesId)
+    {
+        return $query->where('Users_id', $AprendicesId);
+    }
 
 }
