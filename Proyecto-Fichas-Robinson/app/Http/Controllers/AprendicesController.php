@@ -11,7 +11,7 @@ class AprendicesController extends Controller
 {
     public function index()
     {
-       // $Aprendices = Aprendiz::all();
+       // $Aprendices = Aprendiz::all(); se  coloca comentario
         //return view('Aprendices.index', compact('Aprendices'));
        $Aprendices = Aprendiz::delEstudiante(auth()->User()->id)->get();
         return view('Aprendices.index', compact('Aprendices'));
