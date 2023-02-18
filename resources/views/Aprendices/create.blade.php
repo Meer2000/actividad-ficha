@@ -53,7 +53,7 @@
 
 
                         @foreach($Fichas as $Ficha)
-                        <option value="{{$Ficha->id}}">{{$Ficha->nombre}}</option>
+                        <option value="{{$Ficha->id}}">{{$Ficha->nombre}}  {{$Ficha->Programas->nombre}}</option>
                         @endforeach
 
                     </select>

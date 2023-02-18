@@ -25,11 +25,11 @@
                             <th scope="col">apellidos</th>
                             <th scope="col">correo</th>
                             <th scope="col">numero de documento</th>
-                            <!--  <th scope="col">ficha</th>
+                              <th scope="col">ficha</th>
                             <th scope="col">tipo de formacion</th>
-                            <th scope="col">programa de formacion</th> -->
+                            <th scope="col">programa de formacion</th>
                             <th scope="col">fecha de nacimiento</th>
-                            <!--<th scope="col">Trimestre</th>-->
+                            <th scope="col">Trimestre</th>
 
                         </tr>
                         </thead>
@@ -41,11 +41,11 @@
                             <td>{{$Aprendiz ->apellidos}}</td>
                             <td>{{$Aprendiz ->email}}</td>
                             <td>{{$Aprendiz ->documento}}</td>
-                           <!-- <td>{{$Aprendiz->Fichas_id}}</td>
-                            <td>{{$Aprendiz->Fichas->Tipo_Programa_id}}</td>
-                            <td>{{$Aprendiz ->Fichas->Programas_id}}</td> -->
-                           <td>{{$Aprendiz ->fecha}}</td> -->
-                            <!-- <td>{{$Aprendiz ->Fichas->Trimestre_id}}</td>-->
+                           <td>{{$Aprendiz->Fichas->nombre}}</td>
+                            <td>{{$Aprendiz->Fichas->Tipo_Programa->nombre}}</td>
+                            <td>{{$Aprendiz ->Fichas->Programas->nombre}}</td>
+                           <td>{{$Aprendiz ->fecha}}</td>
+                            <td>{{$Aprendiz ->Fichas->Trimestre->nombre}}</td>
 
                         </tr>
                         </tbody>

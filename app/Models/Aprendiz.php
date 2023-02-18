@@ -23,12 +23,12 @@ class Aprendiz extends Model
 
     public function users()
     {
-        return $this->belongsTo('App\Models\User', 'id');
+        return $this->belongsTo('App\Models\User', 'users_id');
     }
 
     public function Fichas()
     {
-        return $this->belongsTo('App\Models\Ficha', 'id');
+        return $this->belongsTo('App\Models\Ficha', 'Fichas_id');
     }
 
 

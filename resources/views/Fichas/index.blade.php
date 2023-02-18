@@ -31,11 +31,11 @@
                         @foreach($Fichas as $Ficha)
                         <tr>
                             <th>{{$Ficha ->nombre }}</th>
-                            <th>{{$Ficha ->Programas_id }}</th>
+                            <th>{{$Ficha ->Programas->nombre }}</th>
 
-                            <td>{{$Ficha ->Trimestre_id}}</td>
+                            <td>{{$Ficha ->Trimestre->nombre}}</td>
 
-                            <td>{{$Ficha ->Tipo_Programa_id}}</td>
+                            <td>{{$Ficha ->Tipo_Programa->nombre}}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                                     <button type="button" class="btn btn-danger">Borrar</button>
