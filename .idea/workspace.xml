@@ -186,7 +186,7 @@
       <workItem from="1676728005043" duration="883000" />
       <workItem from="1676729234265" duration="30000" />
       <workItem from="1676729469400" duration="9000" />
-      <workItem from="1676729479957" duration="1534000" />
+      <workItem from="1676729479957" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676730428003</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update git ignore">
+      <created>1676731994579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676731994580</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
