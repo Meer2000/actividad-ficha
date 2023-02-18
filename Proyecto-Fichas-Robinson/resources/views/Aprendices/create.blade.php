@@ -50,7 +50,9 @@
 
                     <label for="exampleInputEmail1" class="form-label">Programa de formacion</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">eloquent</option>
+                        @foreach($Fichas as $Ficha)
+                        <option value="">eloquent</option>
+                        @endforeach
                     </select>
 
                 </div>

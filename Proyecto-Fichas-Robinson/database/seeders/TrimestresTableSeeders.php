@@ -14,7 +14,22 @@ class TrimestresTableSeeders extends Seeder
      * @return void
      */
     public function run()
-    {   Trimestre::create([
-          'nombre'=>'tecnico']);
+    {   /*Trimestre::create([
+          'nombre'=>'Timestre I']);
+        Trimestre::create([
+            'nombre'=>'Timestre II']);
+        Trimestre::create([
+            'nombre'=>'Timestre III']);
+        Trimestre::create([
+            'nombre'=>'Timestre IV']);
+        Trimestre::create([
+            'nombre'=>'Timestre V']);
+        Trimestre::create([
+            'nombre'=>'Timestre VI']);
+        Trimestre::create([
+            'nombre'=>'Timestre VII']);
+        Trimestre::create([
+            'nombre'=>'Timestre VIII']);*/
+
     }
 }

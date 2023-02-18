@@ -19,11 +19,14 @@ return new class extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('Trimestre_id')->unsigned();
             $table->bigInteger('Programas_id')->unsigned();
+            $table->bigInteger('Tipo_Programa_id')->unsigned();
 
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('Trimestre_id')->references('id')->on('Trimestre');
             $table->foreign('Programas_id')->references('id')->on('Programas');
+            $table->foreign('Tipo_Programa_id')->references('id')->on('Tipo_Programa');
+
             $table->timestamps();
 
 

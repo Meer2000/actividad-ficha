@@ -10,25 +10,28 @@ class Aprendiz extends Model
     use HasFactory;
 
     protected $table = 'Aprendices';
-    protected $primarykey ='id';
+    protected $primarykey = 'id';
     protected $fillable = ['nombres',
-                           'apellidos',
-                           'email',
-                           'telefono',
-                           'fecha',
-                           'documento',
-                           'users_id',
-                           'FICHAS_Id',
-                           ];
-                           public function user()
-                           {
-                               return $this->belongsTo('App\Models\User','id');
-                           }
+        'apellidos',
+        'email',
+        'telefono',
+        'fecha',
+        'documento',
+        'users_id',
+        'Fichas_Id',
+    ];
 
-                           public function fichas()
-                           {
-                               return $this->belongsTo('App\Models\Ficha','id');
-                           }
+    public function users()
+    {
+        return $this->belongsTo('App\Models\User', 'id');
+    }
+
+    public function Fichas()
+    {
+        return $this->belongsTo('App\Models\Ficha', 'id');
+    }
+
+
 
     public function scopeDelEstudiante($query, $AprendicesId)
     {

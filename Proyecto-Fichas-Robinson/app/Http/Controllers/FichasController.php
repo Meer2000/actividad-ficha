@@ -32,10 +32,10 @@ class FichasController extends Controller
     {
         $Ficha = Ficha::create([  'id'=> $request->id,
                                 'nombre'=> $request->nombre,
-                                'Users_Id'=> $request->Users_Id,
-                                'trimestre_idtrimestre'=> $request->trimestre_idtrimestre,
-                                'TIPO_PROGRAMA_Id'=> $request->TIPO_PROGRAMA_Id,
-                                'Programas_Id'=> $request->Programas_Id,
+                                'User_id'=> $request->user_id,
+                                'Trimestre_id'=> $request->trimestre_id,
+                                'Programas_Id'=> $request->Programas_id,
+                                'Tipo_Programa_Id'=> $request->Tipo_Programa_id,
                              ]);
         return redirect()->route('Fichas.index')->with('success','Se ha creado correctamente.');
     }

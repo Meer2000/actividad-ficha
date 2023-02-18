@@ -13,20 +13,20 @@ class Ficha extends Model
     protected $fillable = ['nombre',
                            'Users_Id',
                            'Trimestre_id',
-                           'TIPO_PROGRAMA_Id',
+                           'Tipo_Programa_Id',
                            'Programas_Id'
                            ];
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('App\Models\User','Id');
+        return $this->belongsTo('App\Models\User','id');
     }
-    public function trimestre()
+    public function Trimestre()
     {
-        return $this->belongsTo('App\Models\Trimestre','idtrimestre');
+        return $this->belongsTo('App\Models\Trimestre','id');
     }
-    public function tipo_programa()
+    public function Tipo_Programa()
     {
-        return $this->belongsTo('App\Models\Tipo_programa','id');
+        return $this->belongsTo('App\Models\Tipo_Programa','id');
     }
     public function Programa()
     {
