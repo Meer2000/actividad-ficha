@@ -46,7 +46,7 @@ class AprendicesController extends Controller
             'fecha' => $request->fecha,
             'documento' => $request->documento,
            'users_id' => $user -> id,
-            'Fichas_id' => $request ->Fichas_id,//esto 
+            'Fichas_id' => $request ->Fichas_id,//esto
         ]);
         return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
     }
