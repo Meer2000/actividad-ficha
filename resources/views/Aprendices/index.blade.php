@@ -18,7 +18,7 @@
                 </div>
 
                 <div>
-                    <table class="table table-striped">
+                    <table class="table table-striped table-info">
                         <thead>
                         <tr>
                             <th scope="col">Nombres</th>

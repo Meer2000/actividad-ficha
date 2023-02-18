@@ -20,8 +20,11 @@ class FichasController extends Controller
 
     public function create()
     {
+        $Tipo_Programas = Tipo_programa::all();
+        $Trimestres = Trimestre::all();
+        $Programas = Programa::all();
         $Fichas = Ficha::all();
-        return view('Fichas.create', compact('Fichas'));
+        return view('Fichas.create', compact('Fichas','Programas','Trimestres','Tipo_Programas'));
     }
 
     public function show($id)
@@ -36,19 +39,20 @@ class FichasController extends Controller
 
         $Ficha = Ficha::create(['id' => $request->id,
             'nombre' => $request->nombre,
-            'User_id' => $request->user_id,
-            'Trimestre_id' => $request->trimestre_id,
-            'Programas_Id' => $request->Programas_id,
-            'Tipo_Programa_Id' => $request->Tipo_Programa_id,
-            'users_id' => $user->id,
+            'user_id' => $user->id,
+            'Trimestre_id' => $request->Trimestre_id,
+            'Programas_id' => $request->Programas_id,
+            'Tipo_Programa_id' => $request->Tipo_Programa_id,
+
         ]);
         return redirect()->route('Fichas.index')->with('success', 'Se ha creado correctamente.');
     }
 
     public function edit($id)
     {
+
         $Ficha = Ficha::find($id);
-        return view('Fichas.edit', compact('Ficha',));
+        return view('Fichas.edit', compact('Ficha'));
     }
 
     public function update(Request $request, $id)

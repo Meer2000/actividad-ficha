@@ -28,9 +28,9 @@ class AprendicesController extends Controller
 
     public function show($id)
     {
-        $Ficha =Ficha::find($id);
+
         $Aprendiz = Aprendiz::find($id);
-        return view('Aprendices.show', compact('Aprendiz','Ficha'));
+        return view('Aprendices.show', compact('Aprendiz'));
     }
 
     public function store(Request $request)

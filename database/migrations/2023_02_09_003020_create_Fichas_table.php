@@ -19,7 +19,7 @@ return new class extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('Trimestre_id')->unsigned();
             $table->bigInteger('Programas_id')->unsigned();
-            $table->bigInteger('Tipo_Programa_id')->unsigned();
+            $table->bigInteger('Tipo_Programa_id')->unsigned()->nullable();
 
 
             $table->foreign('user_id')->references('id')->on('users');

@@ -18,7 +18,7 @@
                 <h3>EDITAR FICHA DE FORMACIÓN</h3>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
-                    <input type="email" value="{{$Ficha->nombre}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="number" name="nombre" value="{{$Ficha->nombre}}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nivel formativo</label>

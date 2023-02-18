@@ -17,31 +17,49 @@
                 <h3>CREAR FICHA FORMACIÓN</h3>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
-                    <input type="number" class="form-control" id="exampleInputEmail1" >
-                </div>
-                @foreach($Fichas as $Ficha)
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nivel formativo</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option type="hidden" name="Fichas_id" id="Fichas_id" value="{{Auth::user()}}"></option>
-                    </select>
-                </div>
-                @endforeach
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">¿En que programa se encuentra?</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option type="hidden" name="Fichas_id" id="Fichas_id" value="{{Auth::user()}}"></option>
-                    </select>
+                    <input type="number" name="nombre" class="form-control" id="exampleInputEmail1">
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">¿Trimestre actual?</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option type="hidden" name="Fichas_id" id="Fichas_id" value="{{Auth::user()}}"></option>
+
+                    <label for="Tipo_Programa_id" class="form-label">Tipo de Programa</label>
+                    <select class="form-select" name="Tipo_Programa_id" id="Tipo_Programa_id">
+
+
+                        @foreach($Tipo_Programas as $Tipo_Programa)
+                            <option value="{{$Tipo_Programa->id}}">{{$Tipo_Programa->nombre}}</option>
+                        @endforeach
+
                     </select>
+
+
+                <div class="mb-3">
+
+                    <label for="Programas_id" class="form-label">¿En que programa desea asociarla?</label>
+                    <select class="form-select" name="Programas_id" id="Programas_id">
+
+
+                        @foreach($Programas as $Programa)
+                            <option value="{{$Programa->id}}">{{$Programa->nombre}}</option>
+                        @endforeach
+
+                    </select>
+
                 </div>
 
+                <div class="mb-3">
+
+                    <label for="Trimestre_id" class="form-label">¿En que Trimestre?</label>
+                    <select class="form-select" name="Trimestre_id" id="Trimestre_id">
+
+
+                        @foreach($Trimestres as $Trimestre)
+                            <option value="{{$Trimestre->id}}">{{$Trimestre->nombre}}</option>
+                        @endforeach
+
+                    </select>
+
+                </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
                 </div>

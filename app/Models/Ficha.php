@@ -11,7 +11,7 @@ class Ficha extends Model
     protected $table = 'Fichas';
     protected $primarykey ='id';
     protected $fillable = ['nombre',
-                           'Users_id',
+                           'user_id',
                            'Trimestre_id',
                            'Tipo_Programa_id',
                            'Programas_id'

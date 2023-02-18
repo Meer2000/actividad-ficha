@@ -59,12 +59,7 @@
                     </select>
 
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
-                    </select>
-                </div>
+
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>
                 </div>
