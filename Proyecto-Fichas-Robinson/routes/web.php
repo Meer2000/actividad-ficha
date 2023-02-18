@@ -9,6 +9,7 @@ use App\Http\Controllers\FichasController;
 use App\Http\Controllers\HorariosController;
 use App\Http\Controllers\ProgramasController;
 use App\Http\Controllers\TrimestresController;
+Use App\Http\Controllers\DashboardController;
 
 
 /*
@@ -41,5 +42,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::resource('Aprendices', AprendicesController::class);
 
 
+
+
 });
+
 
