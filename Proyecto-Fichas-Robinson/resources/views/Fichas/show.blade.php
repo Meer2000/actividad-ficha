@@ -23,7 +23,7 @@
                             <th scope="col">Nivel Formativo</th>
                             <th scope="col">Nombre del Programa</th>
                             <th scope="col">Trimestre</th>
-                            <th scope="col">Numero de aprendices</th>
+                            <th scope="col">Tipo de progrma</th>
                         <tbody>
 
                         <tr>
@@ -32,6 +32,7 @@
                             <td>{{$Ficha ->user_id }}</td>
                             <td>{{$Ficha ->Trimestre_id }}</td>
                             <td>{{$Ficha ->Programas_id }}</td>
+                            <td>{{$Ficha ->Tipo_Programa_id }}</td>
                         </tr>
                         </tbody>
 

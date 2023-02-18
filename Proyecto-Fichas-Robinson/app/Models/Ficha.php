@@ -33,5 +33,8 @@ class Ficha extends Model
         return $this->belongsTo('App\Models\Programa','id');
     }
 
-
+    public function scopeDelEstudiante($query, $FichasId)
+    {
+        return $query->where('user_id', $FichasId);
+    }
 }
