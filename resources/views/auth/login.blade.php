@@ -3,7 +3,7 @@
 @section('content')
     <header class="headers" style="">
         <div class="inner-top d-flex justify-content-center justify-content-sm-center justify-content-md-between justify-content-lg-between" >
-                <a href="{{url('auth.login')}}" id="logo-sena" class="img-fluid" title="Logo Sena"></a>
+            <a href="{{url('auth.login')}}" id="logo-sena" class="img-fluid" title="Logo Sena"></a>
         </div>
     </header>
     <div class="linea"></div>
