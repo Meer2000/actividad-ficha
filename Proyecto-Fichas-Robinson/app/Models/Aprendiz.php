@@ -18,7 +18,7 @@ class Aprendiz extends Model
         'fecha',
         'documento',
         'users_id',
-        'Fichas_Id',
+        'Fichas_id',
     ];
 
     public function users()

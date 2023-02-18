@@ -48,11 +48,14 @@
                 <h4>Asigancion de ficha</h4>
                 <div class="mb-3">
 
-                    <label for="exampleInputEmail1" class="form-label">Programa de formacion</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <label for="exampleInputEmail1" class="form-label">Ficha</label>
+                    <select class="form-select" name="Fichas_id" id="Fichas_id">
+
+
                         @foreach($Fichas as $Ficha)
-                        <option value="">eloquent</option>
+                        <option value="{{$Ficha->id}}">{{$Ficha->nombre}}</option>
                         @endforeach
+
                     </select>
 
                 </div>

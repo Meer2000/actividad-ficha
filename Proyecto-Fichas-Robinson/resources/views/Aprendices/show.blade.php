@@ -39,7 +39,7 @@
                             <td>{{$Aprendiz ->apellidos}}</td>
                             <td>{{$Aprendiz ->email}}</td>
                             <td>{{$Aprendiz ->documento}}</td>
-                            <td>ficha</td>
+                            <td>{{$Aprendiz->Fichas_id}}</td>
                             <td>tipo de formacion</td>
                             <td>{{$Aprendiz ->fecha}}</td>
 

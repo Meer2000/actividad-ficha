@@ -17,14 +17,14 @@
                     <label for="exampleInputEmail1" class="form-label">Numero de ficha</label>
                     <input type="number" class="form-control" id="exampleInputEmail1" >
                 </div>
-                @foreach($Fichas as $Ficha)
+
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nivel formativo</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option value="1">{{$Ficha ->nombre}}</option>
+                        <option value="1"></option>
                     </select>
                 </div>
-                @endforeach
+
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">¿En que programa se encuentra?</label>

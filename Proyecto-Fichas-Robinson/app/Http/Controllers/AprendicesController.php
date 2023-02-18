@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ficha;
 use Illuminate\Http\Request;
 use App\Models\Aprendiz;
 //use Illuminate\Support\Facades\Auth;
@@ -20,19 +21,22 @@ class AprendicesController extends Controller
 
     public function create()
     {
+        $Fichas = Ficha::all();
         $Aprendices = Aprendiz::all();
-        return view('Aprendices.create', compact('Aprendices'));
+        return view('Aprendices.create', compact('Aprendices','Fichas'));
     }
 
     public function show($id)
     {
+        $Ficha =Ficha::find($id);
         $Aprendiz = Aprendiz::find($id);
-        return view('Aprendices.show', compact('Aprendiz'));
+        return view('Aprendices.show', compact('Aprendiz','Ficha'));
     }
 
     public function store(Request $request)
     {
         $user = Auth::user();
+
 
         $Aprendiz = Aprendiz::create(['id' => $request->id,
             'nombres' => $request->nombres,
@@ -41,7 +45,8 @@ class AprendicesController extends Controller
             'telefono' => $request->telefono,
             'fecha' => $request->fecha,
             'documento' => $request->documento,
-           'users_id' => $user -> id, //esto es prueba
+           'users_id' => $user -> id,
+            'Fichas_id' => $request ->Fichas_id,//esto es prueba
         ]);
         return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
     }

@@ -11,10 +11,10 @@ class Ficha extends Model
     protected $table = 'Fichas';
     protected $primarykey ='id';
     protected $fillable = ['nombre',
-                           'Users_Id',
+                           'Users_id',
                            'Trimestre_id',
-                           'Tipo_Programa_Id',
-                           'Programas_Id'
+                           'Tipo_Programa_id',
+                           'Programas_id'
                            ];
     public function users()
     {
@@ -28,7 +28,7 @@ class Ficha extends Model
     {
         return $this->belongsTo('App\Models\Tipo_Programa','id');
     }
-    public function Programa()
+    public function Programas()
     {
         return $this->belongsTo('App\Models\Programa','id');
     }
