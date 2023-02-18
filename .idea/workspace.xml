@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ELOQUENT missed with build">
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ELOQUENT READY">
+      <change afterPath="$PROJECT_DIR$/resources/views/export.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Proyecto-Fichas-Robinson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proyecto-Fichas-Robinson.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Aprendiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Aprendiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Ficha.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Ficha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fichas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fichas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fichas/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fichas/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +155,13 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="2LuifwKL8FZHOBktANNvb1rCLfU" />
@@ -197,7 +206,7 @@
       <workItem from="1676729234265" duration="30000" />
       <workItem from="1676729469400" duration="9000" />
       <workItem from="1676729479957" duration="1774000" />
-      <workItem from="1676732435796" duration="21288000" />
+      <workItem from="1676732435796" duration="27229000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -283,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676750583127</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ELOQUENT READY">
+      <created>1676754778204</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754778204</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +322,7 @@
     <MESSAGE value="update version jetstream" />
     <MESSAGE value="update jetstream inertia to liverware" />
     <MESSAGE value="ELOQUENT missed with build" />
-    <option name="LAST_COMMIT_MESSAGE" value="ELOQUENT missed with build" />
+    <MESSAGE value="ELOQUENT READY" />
+    <option name="LAST_COMMIT_MESSAGE" value="ELOQUENT READY" />
   </component>
 </project>

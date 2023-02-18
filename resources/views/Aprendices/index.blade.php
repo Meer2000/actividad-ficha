@@ -16,6 +16,7 @@
                 <div>
                     <H3>Lista de aprendices</H3>
                 </div>
+                <a href="{{route('export')}}" type="button" class="btn btn-success">EXPORTAR</a>
 
                 <div>
                     <table class="table table-striped table-info">

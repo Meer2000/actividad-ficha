@@ -24,7 +24,8 @@ Use App\Http\Controllers\ExportController;
 |
 */
 
-Route::get('/', function () {
+
+  Route::get('/', function () {
     return view('auth.login');
 });
 
@@ -41,4 +42,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::resource('Programas',ProgramasController::class);
     Route::resource('Trimestres',TrimestresController::class);
     Route::resource('Aprendices', AprendicesController::class);
+    Route::get('/export',[ExportController::class,'export'])->name('export');
 });
