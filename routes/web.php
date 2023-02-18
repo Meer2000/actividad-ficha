@@ -10,6 +10,7 @@ use App\Http\Controllers\HorariosController;
 use App\Http\Controllers\ProgramasController;
 use App\Http\Controllers\TrimestresController;
 Use App\Http\Controllers\DashboardController;
+Use App\Http\Controllers\ExportController;
 
 
 /*
@@ -40,10 +41,4 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::resource('Programas',ProgramasController::class);
     Route::resource('Trimestres',TrimestresController::class);
     Route::resource('Aprendices', AprendicesController::class);
-
-
-
-
 });
-
-

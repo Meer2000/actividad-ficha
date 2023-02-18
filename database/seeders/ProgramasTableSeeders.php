@@ -15,7 +15,7 @@ class ProgramasTableSeeders extends Seeder
      */
     public function run()
     {
-      /* Programa::create([
+       Programa::create([
         'nombre'=>'Mantenimiento de equipos'
         ]);
         Programa::create([
@@ -32,6 +32,6 @@ class ProgramasTableSeeders extends Seeder
         ]);
         Programa::create([
             'nombre'=>'Telecomunicaciones'
-        ]);*/
+        ]);
     }
 }
