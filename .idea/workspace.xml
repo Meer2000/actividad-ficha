@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ELOQUENT READY">
-      <change afterPath="$PROJECT_DIR$/resources/views/export.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Proyecto-Fichas-Robinson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proyecto-Fichas-Robinson.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ADD EXPORT EXCEL" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +196,7 @@
       <workItem from="1676729234265" duration="30000" />
       <workItem from="1676729469400" duration="9000" />
       <workItem from="1676729479957" duration="1774000" />
-      <workItem from="1676732435796" duration="27229000" />
+      <workItem from="1676732435796" duration="27408000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -299,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676754778204</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ADD EXPORT EXCEL">
+      <created>1676761731579</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676761731579</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +320,7 @@
     <MESSAGE value="update jetstream inertia to liverware" />
     <MESSAGE value="ELOQUENT missed with build" />
     <MESSAGE value="ELOQUENT READY" />
-    <option name="LAST_COMMIT_MESSAGE" value="ELOQUENT READY" />
+    <MESSAGE value="ADD EXPORT EXCEL" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD EXPORT EXCEL" />
   </component>
 </project>
