@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="update edit form and add icon sena to navbar">
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="updated tables responsives">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fichas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fichas/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Fichas/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Fichas/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +201,8 @@
       <workItem from="1676732435796" duration="27408000" />
       <workItem from="1676762392186" duration="102000" />
       <workItem from="1676821342403" duration="9794000" />
-      <workItem from="1676831898123" duration="344000" />
+      <workItem from="1676831898123" duration="624000" />
+      <workItem from="1676834239650" duration="1918000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -318,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676831522600</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated tables responsives">
+      <created>1676832390079</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676832390079</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +349,7 @@
     <MESSAGE value="ELOQUENT READY" />
     <MESSAGE value="ADD EXPORT EXCEL" />
     <MESSAGE value="update edit form and add icon sena to navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="update edit form and add icon sena to navbar" />
+    <MESSAGE value="updated tables responsives" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated tables responsives" />
   </component>
 </project>
