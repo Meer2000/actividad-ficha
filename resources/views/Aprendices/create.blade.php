@@ -4,9 +4,9 @@
         <div class="col-md-2">
             <div class="list-group">
 
-                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action">Crear
+                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action list-group-item-primary">Crear
                     aprendiz</a>
-                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action">Listar
+                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action list-group-item-warning">Listar
                     aprendices</a>
             </div>
 
@@ -42,23 +42,24 @@
                     <label for="documento" class="form-label">Numero de Documento</label>
                     <input type="number" name="documento" class="form-control" id="documento"
                            required>
-                    <input class="form-control" type="hidden" name="users_id" id="users_id" value="{{Auth::user()}}" >
+                    <input class="form-control" type="hidden" name="users_id" id="users_id" value="{{Auth::user()}}">
                 </div>
 
                 <h4>Asigancion de ficha</h4>
                 <div class="mb-3">
 
-                    <label for="exampleInputEmail1" class="form-label">Ficha</label>
+                    <label for="Fichas_id" class="form-label">Ficha</label>
                     <select class="form-select" name="Fichas_id" id="Fichas_id">
 
 
                         @foreach($Fichas as $Ficha)
-                        <option value="{{$Ficha->id}}">{{$Ficha->nombre}}  {{$Ficha->Programas->nombre}}</option>
-                        @endforeach
-
+                            <option value="{{$Ficha->id}}">{{$Ficha->nombre}}  {{$Ficha->Programas->nombre}}</option>
+                    @endforeach
                     </select>
 
                 </div>
+
+
 
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" style="float:right">Crear</button>

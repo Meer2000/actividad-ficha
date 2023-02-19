@@ -3,10 +3,10 @@
     <div class="row" style="margin-top:5%">
 
         <div class="col-md-2">
-            <div class="list-group">
+            <div class="list-group" >
 
-                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action">Crear aprendiz</a>
-                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action">Listar aprendices</a>
+                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action list-group-item-primary">Crear aprendiz</a>
+                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action list-group-item-warning">Listar aprendices</a>
             </div>
 
         </div>
@@ -43,17 +43,24 @@
                 <div class="mb-3">
                     <h3>Asignacion de ficha</h3>
                 </div>
+
                 <div class="mb-3">
-                    <label for="fichas_id" class="form-label">Programa de formacion:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
+
+                    <label for="Fichas_id" class="form-label">Ficha</label>
+                    <select class="form-select" name="Fichas_id" id="Fichas_id">
+
+
+
+
+
+                            <option value="{{$Aprendiz->Fichas->id}}" >{{$Aprendiz->Fichas->nombre}}   {{$Aprendiz->Fichas->Programas->nombre}} {{$Aprendiz->Fichas->Tipo_Programa->nombre}}</option>
+                        @foreach($fichas as $ficha)
+                            <option value="{{$ficha->id}}">{{$ficha->nombre}}  {{$ficha->Programas->nombre}} {{$ficha->Tipo_Programa->nombre}}</option>
+                        @endforeach
+
+
                     </select>
-                </div>
-                <div class="mb-3">
-                    <label for="fichas_id" class="form-label">Numero de ficha:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1">hacer foreach</option>
-                    </select>
+
                 </div>
 
                 <div class="mb-3">

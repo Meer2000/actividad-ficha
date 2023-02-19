@@ -21,6 +21,7 @@ class AprendicesController extends Controller
 
     public function create()
     {
+
         $Fichas = Ficha::all();
         $Aprendices = Aprendiz::all();
         return view('Aprendices.create', compact('Aprendices','Fichas'));
@@ -53,8 +54,11 @@ class AprendicesController extends Controller
 
     public function edit($id)
     {
+        $fichas = Ficha::all();
+
+        $Ficha =Ficha::find($id);
         $Aprendiz = Aprendiz::find($id);
-        return view('Aprendices.edit', compact('Aprendiz'));
+        return view('Aprendices.edit', compact('Aprendiz','Ficha','fichas'));
     }
 
     public function update(Request $request, $id)

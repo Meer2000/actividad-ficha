@@ -3,23 +3,24 @@
     <div class="row" style="margin-top:5%">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action">Crear
+                <a href="{{route('Aprendices.create')}}" class="list-group-item list-group-item-action list-group-item-primary">Crear
                     aprendiz</a>
-                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action">Listar
+                <a href="{{route('Aprendices.index')}}" class="list-group-item list-group-item-action list-group-item-warning">Listar
                     aprendiz</a>
             </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-10">
 
-            <div class="col py-3">
-                <div>
+
+
                     <H3>Lista de aprendices</H3>
-                </div>
-                <a href="{{route('export')}}" type="button" class="btn btn-success">EXPORTAR</a>
+ <a href="{{route('export')}}" type="button" class="btn btn-success ">EXPORTAR</a>
 
-                <div>
-                    <table class="table table-striped table-info">
+
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-info  ">
                         <thead>
                         <tr>
                             <th scope="col">Nombres</th>
@@ -53,9 +54,10 @@
 
                         </tbody>
                     </table>
+
                 </div>
 
-            </div>
+
         </div>
     </div>
 

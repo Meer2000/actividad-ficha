@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ADD EXPORT EXCEL" />
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="ADD EXPORT EXCEL">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AprendicesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AprendicesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +205,8 @@
       <workItem from="1676729469400" duration="9000" />
       <workItem from="1676729479957" duration="1774000" />
       <workItem from="1676732435796" duration="27408000" />
+      <workItem from="1676762392186" duration="102000" />
+      <workItem from="1676821342403" duration="9512000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -296,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676761731579</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ADD EXPORT EXCEL">
+      <created>1676762480151</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676762480151</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
