@@ -15,7 +15,7 @@
                     <H3>LISTA DE FICHAS</H3>
                 </div>
 
-                <div>
+                <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
                         <tr>

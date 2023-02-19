@@ -17,7 +17,7 @@
                     <H3>Detalles del Aprendiz {{$Aprendiz->nombres}}  {{$Aprendiz->apellidos}}</H3>
                 </div>
 
-                <div>
+                <div class="table-responsive">
                     <table class="table table-striped table-hover table-info table-responsive ">
                         <thead style="text-align: center">
                         <tr>
