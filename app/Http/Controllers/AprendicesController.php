@@ -5,16 +5,22 @@ namespace App\Http\Controllers;
 use App\Models\Ficha;
 use Illuminate\Http\Request;
 use App\Models\Aprendiz;
+
 //use Illuminate\Support\Facades\Auth;
 use Auth;
 
 class AprendicesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-       // $Aprendices = Aprendiz::all(); se  coloca comentario en este line
+        // $Aprendices = Aprendiz::all(); se  coloca comentario en este line
         //return view('Aprendices.index', compact('Aprendices'));
-       $Aprendices = Aprendiz::delEstudiante(auth()->User()->id)->get();
+        $q = $request->q;
+        $Aprendices = Aprendiz::delEstudiante(auth()->User()->id)->when(
+            $q, function ($query) use ($q) {
+            $query->where('documento', 'like', '%'. $q .'%');
+        }
+        )->get();
         return view('Aprendices.index', compact('Aprendices'));
 
     }
@@ -24,7 +30,7 @@ class AprendicesController extends Controller
 
         $Fichas = Ficha::all();
         $Aprendices = Aprendiz::all();
-        return view('Aprendices.create', compact('Aprendices','Fichas'));
+        return view('Aprendices.create', compact('Aprendices', 'Fichas'));
     }
 
     public function show($id)
@@ -46,8 +52,8 @@ class AprendicesController extends Controller
             'telefono' => $request->telefono,
             'fecha' => $request->fecha,
             'documento' => $request->documento,
-           'users_id' => $user -> id,
-            'Fichas_id' => $request ->Fichas_id,
+            'users_id' => $user->id,
+            'Fichas_id' => $request->Fichas_id,
         ]);
         return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
     }
@@ -56,9 +62,9 @@ class AprendicesController extends Controller
     {
         $fichas = Ficha::all();
 
-        $Ficha =Ficha::find($id);
+        $Ficha = Ficha::find($id);
         $Aprendiz = Aprendiz::find($id);
-        return view('Aprendices.edit', compact('Aprendiz','Ficha','fichas'));
+        return view('Aprendices.edit', compact('Aprendiz', 'Ficha', 'fichas'));
     }
 
     public function update(Request $request, $id)
