@@ -30,10 +30,24 @@
 
                     <H3>LISTA DE APRENDICES</H3>
                 </div>
-                <div class="col-md-2">
-                    <br>
-                    <a href="{{route('export')}}" type="button" class="btn btn-success ">EXPORTAR</a>
+               <div class="col-md-3">
+                   <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
+                       @csrf
+                       <div class="form-group mb-4" style="max-width: 500px; margin: 0 auto;">
+                           <div class="custom-file text-left">
+                               <input type="file" name="file" class="custom-file-input" id="customFile">
+                           </div>
+                       </div>
+                       <button class="btn btn-primary">Import data</button>
+                       <a class="btn btn-success" href="{{ route('export') }}">Export data</a>
+                   </form>
+                   <!--       <br>
+                  <div>
+                   <a href="{{route('import')}}" type="button" class="btn btn-success ">IMPORTAR</a> >
+
                 </div>
+                    <a href="{{route('export')}}" type="button" class="btn btn-success ">EXPORTAR</a>
+                </div>-->
             </div>
 
             <div class="table-responsive">

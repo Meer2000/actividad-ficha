@@ -11,6 +11,7 @@ use App\Http\Controllers\ProgramasController;
 use App\Http\Controllers\TrimestresController;
 Use App\Http\Controllers\DashboardController;
 Use App\Http\Controllers\ExportController;
+Use App\Http\Controllers\ImportController;
 
 
 /*
@@ -43,4 +44,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::resource('Trimestres',TrimestresController::class);
     Route::resource('Aprendices', AprendicesController::class);
     Route::get('/export',[ExportController::class,'export'])->name('export');
+    Route::post('/import', [ImportController::class, 'import'])->name('import');
 });

@@ -1,4 +1,3 @@
-
- <h1>Exportar Contenidos a Ecxel</h1>
-
- <a href="{{route('export')}}">Exportar</a>
+<h1>Exportar arendies</h1>
+<a href="{{route('export')}}">Exportar lista
+</a>
