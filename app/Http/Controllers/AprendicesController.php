@@ -55,7 +55,7 @@ class AprendicesController extends Controller
             'users_id' => $user->id,
             'Fichas_id' => $request->Fichas_id,
         ]);
-        return redirect()->route('Aprendices.index')->with('success', 'Se ha creado correctamente.');
+        return redirect()->route('Aprendices.index')->with('success', 'El Aprendiz Se ha creado correctamente.');
     }
 
     public function edit($id)
