@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="add search">
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="add alert funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AprendicesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AprendicesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Aprendices/index.blade.php" afterDir="false" />
@@ -210,7 +210,7 @@
       <workItem from="1676834239650" duration="1918000" />
       <workItem from="1676839016647" duration="145000" />
       <workItem from="1676923100833" duration="3643000" />
-      <workItem from="1677266029541" duration="1694000" />
+      <workItem from="1677266029541" duration="14967000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -338,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676839145912</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add alert funcional">
+      <created>1677267903919</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677267903920</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +384,7 @@
     <MESSAGE value="update edit form and add icon sena to navbar" />
     <MESSAGE value="updated tables responsives" />
     <MESSAGE value="compoaer update" />
-    <option name="LAST_COMMIT_MESSAGE" value="compoaer update" />
+    <MESSAGE value="add alert funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alert funcional" />
   </component>
 </project>

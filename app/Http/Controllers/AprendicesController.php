@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Imports\AprendicesImport;
 use App\Models\Ficha;
 use Illuminate\Http\Request;
 use App\Models\Aprendiz;
 
 //use Illuminate\Support\Facades\Auth;
 use Auth;
+use Maatwebsite\Excel\Facades\Excel;
+
 
 class AprendicesController extends Controller
 {
@@ -43,7 +46,8 @@ class AprendicesController extends Controller
     public function store(Request $request)
     {
         $user = Auth::user();
-
+        $file = $request->file('file');
+        Excel:: import(new AprendicesImport, $file);
 
         $Aprendiz = Aprendiz::create(['id' => $request->id,
             'nombres' => $request->nombres,

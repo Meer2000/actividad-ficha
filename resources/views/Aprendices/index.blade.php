@@ -38,22 +38,27 @@
             <br>
             <div class="row">
 
-                <div class="col-md-10">
+                <div class="col-md-9">
 
                     <H3>LISTA DE APRENDICES</H3>
                 </div>
-                <div class="col-md-3">
-                    <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-                        <div class="form-group mb-4" style="max-width: 500px; margin: 0 auto;">
-                            <div class="custom-file text-left">
-                                <input type="file" name="file" class="custom-file-input" id="customFile">
+                <div class="row">
+                    <div class="col-md-3">
+                        <form action="{{ route('Aprendices.store') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="form-group mb-3" style="max-width: 500px; margin: 0 auto;">
+                                <div class="custom-file text-left">
+                                    <input type="file" name="file" class="custom-file-input" id="customFile">
+                                </div>
                             </div>
-                        </div>
-                        <button class="btn btn-primary">Import data</button>
-                        <a class="btn btn-success" href="{{ route('export') }}">Export data</a>
+                            <button class="btn btn-primary">Import data</button>
 
-                    </form>
+                        </form>
+                    </div>
+                    <div class="col-md-9"><br><br>
+                        <a class="btn btn-success" href="{{ route('export') }}" style="float: right">Export data</a>
+
+                    </div>
 
 
                     <!--       <br>
@@ -63,6 +68,7 @@
                 </div>
                     <a href="{{route('export')}}" type="button" class="btn btn-success ">EXPORTAR</a>
                 </div>-->
+
                 </div>
 
 
@@ -109,5 +115,6 @@
 
             </div>
         </div>
+    </div>
 
 @endsection
