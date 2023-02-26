@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="update composer" />
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="update composer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +173,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/michell.escarraga/Desktop/actividad-ficha",
+    "last_opened_file_path": "C:/Users/michell.escarraga/Desktop/lckm-cloud",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -210,7 +212,7 @@
       <workItem from="1677266029541" duration="14991000" />
       <workItem from="1677429587863" duration="437000" />
       <workItem from="1677430119722" duration="19000" />
-      <workItem from="1677432126936" duration="787000" />
+      <workItem from="1677432126936" duration="1592000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -373,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677432728051</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update composer">
+      <created>1677432947109</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677432947109</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
