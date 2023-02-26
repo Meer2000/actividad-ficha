@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="import funcional">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-    </list>
+    <list default="true" id="05ffdaab-f528-49f8-811a-ead103ad0e79" name="Changes" comment="update composer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +12,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -212,7 +210,7 @@
       <workItem from="1677266029541" duration="14991000" />
       <workItem from="1677429587863" duration="437000" />
       <workItem from="1677430119722" duration="19000" />
-      <workItem from="1677432126936" duration="333000" />
+      <workItem from="1677432126936" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="eliminar barras">
       <created>1676728142442</created>
@@ -361,7 +359,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677429802314</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update composer">
+      <created>1677432649455</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1677432649455</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update composer">
+      <created>1677432728051</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677432728051</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +414,7 @@
     <MESSAGE value="compoaer update" />
     <MESSAGE value="add alert funcional" />
     <MESSAGE value="import funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="import funcional" />
+    <MESSAGE value="update composer" />
+    <option name="LAST_COMMIT_MESSAGE" value="update composer" />
   </component>
 </project>
