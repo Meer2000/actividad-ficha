@@ -23,7 +23,7 @@ class AprendicesController extends Controller
             $q, function ($query) use ($q) {
             $query->where('documento', 'like', '%'. $q .'%');
         }
-        )->get();
+        )->paginate(10);
         return view('Aprendices.index', compact('Aprendices'));
 
     }

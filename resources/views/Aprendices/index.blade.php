@@ -105,10 +105,12 @@
                                     </div>
                                 </td>
                             </tr>
+
                         @endforeach
 
                         </tbody>
                     </table>
+                    {{$Aprendices->links()}}
 
                 </div>
 
