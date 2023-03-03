@@ -23,7 +23,7 @@ class AprendicesController extends Controller
             $q, function ($query) use ($q) {
             $query->where('documento', 'like', '%'. $q .'%');
         }
-        )->paginate(2);
+        )->paginate(5);
         return view('Aprendices.index', compact('Aprendices'));
 
     }
@@ -46,8 +46,7 @@ class AprendicesController extends Controller
     public function store(Request $request)
     {
         $user = Auth::user();
-        $file = $request->file('file');
-        Excel:: import(new AprendicesImport, $file);
+
 
         $Aprendiz = Aprendiz::create(['id' => $request->id,
             'nombres' => $request->nombres,

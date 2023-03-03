@@ -44,11 +44,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        <form action="{{ route('Aprendices.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group mb-3" style="max-width: 500px; margin: 0 auto;">
                                 <div class="custom-file text-left">
-                                    <input type="file" name="file" class="custom-file-input" id="customFile">
+                                    <input type="file" name="file" class="custom-file-input" id="customFile" required>
                                 </div>
                             </div>
                             <button class="btn btn-primary">Import data</button>

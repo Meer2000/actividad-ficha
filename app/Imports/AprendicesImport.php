@@ -28,13 +28,14 @@ class AprendicesImport implements ToModel, WithHeadingRow, WithBatchInserts, Wit
              'users_id'=>Auth::user()->id
         ]);
     }
-    public function batchSize(): int
-    {
-        return 13;
-    }
     public function chunkSize(): int
     {
         return 13;
     }
+    public function batchSize(): int
+    {
+        return 13;
+    }
+
 
 }
