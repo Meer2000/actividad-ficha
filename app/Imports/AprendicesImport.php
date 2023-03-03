@@ -25,7 +25,8 @@ class AprendicesImport implements ToModel, WithHeadingRow, WithBatchInserts, Wit
             'telefono'=>$row['telefono'],
             'fecha'=>$row['fecha'],
             'documento'=>$row['documento'],
-             'users_id'=>Auth::user()->id
+             'users_id'=>Auth::user()->id,
+            'Fichas_id'=>$row['fichas_id']
         ]);
     }
     public function chunkSize(): int
